@@ -1,0 +1,807 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    width: auto;
+}
+.head
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background: linear-gradient(to right,violet, rgb(146, 19, 134), rgb(0, 15, 128));
+    position: sticky;
+   max-width:100%;
+   z-index: 99;
+   height: 7vh;
+    top: 0;
+    left: 0;
+  
+}
+.logo
+{
+    height: 10dvh;
+    width: 10dvw;
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.navbar li
+{
+    list-style: none;
+    text-decoration: none;
+    padding: 0 20px;
+    color:white;
+    font-size: 1.5vw;
+}
+.navbar li a{
+    text-decoration: none;
+    transition: 0.2s ease;
+    color: white;
+}
+.navbar li a:hover,
+.navbar li a.active
+
+{
+   color: skyblue;
+  height: 2px;
+  width: 30px;
+    border: 3px;
+    
+    border-bottom: 3px solid   lightskyblue;
+
+}
+.navbar li a.active::after,
+.navbar li a:hover::after
+
+{
+    content:"";
+    color: lightskyblue;
+    border: 3px;
+   
+    border-bottom: 3px solid  lightskyblue; 
+    
+}
+svg
+{
+    height: 4dvh;
+}
+#hero
+{
+ background-repeat: no-repeat;
+background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20220522/pngtree-ecommerce-banner-planning-segmentation-selection-image_1375247.jpg);
+height: 100vh;
+object-fit: cover;
+background-size: cover;
+display: flex;
+flex-direction: column;
+ align-items: flex-start;
+justify-content: center;
+}
+    
+
+
+.nav2
+{
+    display: none;
+}
+h4
+{
+  color: black;
+  margin: 0% 16%;
+  font-size: 2vw;
+   
+}
+h2
+{
+    color: black;
+    font-size: 4vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0% 16%;
+}
+h1
+{
+color:violet;
+font-size: 4vw;
+margin: 0% 16%;
+}
+#hero p
+{
+    color:white;
+font-size: 1.5vw;
+margin: 0% 16%;
+font-weight: 300;
+}
+.homes
+
+{
+    margin: 3% 18%;
+   border: 0px solid rgb(130, 111, 111);
+   background-color: blueviolet;
+ 
+   height: 7vh;
+   width: 10dvw;
+   color: rgb(154, 131, 131);
+   font-weight: 700;
+}
+.homes:hover
+{
+    height: 7vh;
+    width: 10dvw;
+    margin: 3% 18%;
+   border: 2px solid rgb(6, 0, 0);
+   background-color: rgb(244, 241, 246);
+    font-weight: 700;
+    transition: 0.2s;
+}
+button a
+{
+    color: rgb(20, 1, 1);
+font-size: 1.3vw;
+text-decoration: none;
+cursor: pointer;
+}
+#feature
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    flex-wrap: wrap;
+    margin: 3%;
+   
+
+}
+#feature .fe-box
+{
+    width: 145px;
+    overflow: hidden;
+    text-align: center;
+    padding: 25px 15px;
+    border: 10px solid black;
+    box-shadow: 1px 1px 1px 1px rgba(1, 1, 1, 1.0);
+    
+    margin: 15px 0;
+    transition: 0.3s ;
+}  
+
+
+
+#feature .fe-box:hover
+{
+    box-shadow: 1px 1px 1px 1px rgba(243, 240, 240);
+    transition: 0.3s;
+}
+.fe-box img
+{
+   display: flex;
+   object-fit: cover;
+   width: 10vw;
+   margin-bottom: 5px;
+   overflow: hidden;
+
+}
+
+.fe-box .img2 h6
+{
+    padding: 9px 13px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color:white;
+    
+    background-color:black;
+    font-size: 1.3vw;
+}
+#feature .fe-box h6
+{
+    padding: 9px 13px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color:white;
+    
+    background-color:blueviolet;
+    font-size: 1.3vw;
+    cursor: pointer;
+   
+}
+#feature .fe-box h6:hover
+{
+    background-color: black;
+    color: white;
+    transition: 0.7s ease-in-out;
+    border-radius: 10px;
+}
+.h1
+{
+font-size: 4vw;
+color:blueviolet;
+margin: 1% 5%;
+cursor: pointer;
+}
+.contbox
+{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+
+
+
+}
+.price
+{
+    text-decoration: none;
+    color: gray;
+}
+.box 
+{
+    height: 69vh;
+width: 54vh;
+background: linear-gradient(gray);
+margin: 6%;
+gap: 2%;
+border:1px solid black;
+border-radius: 3px
+;
+padding: 3% 3%;
+
+
+}
+.box:hover
+{
+    border:1px solid blueviolet;
+   background:  linear-gradient(to right,rgb(234, 227, 234), rgb(181, 172, 180), rgb(149, 150, 159));
+
+
+}
+.contbox img
+{
+    height: 60vh;
+    width: 54vh;
+display: flex;
+cursor: pointer;
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+border-radius: 3px;
+
+}
+
+a
+{
+   font-size: 1.5vw;
+    list-style: none;
+    text-decoration: none;
+    
+ }
+ 
+.box h2
+{
+    font-size: 1.5vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.view
+{
+    
+    height: 10vh;
+    width: 100%;
+    margin: 15% 0%;
+}
+.button
+{
+    font-weight: 900;
+    height: 8vh;
+    background-color: #e3fc02;
+    display: flex;
+    font-family: monospace;
+   align-items: center;
+   justify-content: center;
+  margin: -10% 43%;
+    width: 10vw;
+    border: none;
+    cursor: pointer;
+}  
+.button a
+{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4vw;
+}
+svg
+{
+    cursor: pointer;
+    background-color: white;
+}
+svg:hover
+{
+    color: white;
+    background-color: white;
+}
+#pagination
+{
+   
+    text-align: center;
+    display: flex;
+    margin: 1%;
+    align-items: center;
+    justify-content: center;
+}
+#pagination a
+{
+    display: flex;
+margin: 0.4%;
+align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    background-color: blueviolet;
+    color: white;
+    height:5dvh;
+    width: 5dvw;
+    border: 1px solid blueviolet;
+    border-radius: 6px;
+}
+#pagination a:hover
+{
+    display: flex;
+margin:0%;
+align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    background-color:white;
+    color:blueviolet;
+    border: 1px solid blueviolet;
+    height:5dvh;
+    width: 5dvw;
+}
+#banner
+{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+background-image: url(customjordan1-cartoonpurpleonpurple.webp);
+background-size: cover;
+width: 100%;
+height: 60dvh;
+background-position: center;
+object-fit: contain;
+
+}
+#banner h4
+{
+    font-family:cursive;
+    color: blueviolet;
+    font-size: 3.5vw;
+}
+#banner h2
+{
+    font-family:'Times New Roman', Times, serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: blueviolet;
+    font-size: 4vw;
+}
+#banner h2 span
+{
+    color:red;
+}
+#banner h2 span
+{
+    color:red;
+    animation: 0.2s 1s alternate ease infinite;
+}
+.viewall
+{
+margin-bottom: auto;
+   border: 0px solid rgb(130, 111, 111);
+   background-color: blueviolet;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 5% 40%;
+   height: 7vh;
+   width: 10dvw;
+   color: rgb(154, 131, 131);
+   font-weight: 700;
+}
+
+button a
+{
+    color: rgb(20, 1, 1);
+font-size: 1.3vw;
+text-decoration: none;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+ 
+.viewall:hover
+{
+   
+   border: 2px solid rgb(6, 0, 0);
+   background-color: rgb(244, 241, 246);
+    font-weight: 700;
+  
+   
+}
+#footer
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(to right,violet, rgb(146, 19, 134), rgb(0, 15, 128));
+}
+#footer .links
+{
+    display: flex;
+    align-items: flex-start;
+ flex-direction:column;
+ justify-content: space-between;
+ padding-left: 5%;
+ 
+}
+#footer .links span
+{
+    color: white;
+    font-weight: 700;
+    font-size: 2vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+#footer .links a
+{
+    display:inline-table;
+    align-items: center;
+    font-size: 1vw;
+    list-style: none;
+    text-decoration: none;
+   color: black;
+}
+#footer .contact p
+{
+    display:inline-table;
+    align-items: center;
+    margin-bottom: 20px;
+    list-style: none;
+    line-height: -2%;
+    font-size: 1vw;
+    text-decoration: none;
+   color: black;
+}
+#thankyou
+{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,violet, rgb(146, 19, 134), rgb(0, 15, 128));
+}
+#thankyou h1
+{
+font-size: 1.5vw;
+color:black;
+font-family: cursive;
+}
+@media screen and (max-width: 680px) {
+    *
+    {
+        padding: 0;
+        margin: 0;
+    }
+    body
+    {
+        width: auto;
+    }
+    .head
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 80px;
+        background: linear-gradient(to right,violet, rgb(146, 19, 134), rgb(0, 15, 128));
+        position: sticky;
+      max-width: 100%;
+       z-index: 99;
+       height: 3vh;
+      
+      
+    }
+    .logo
+    {
+      height: 4vw;
+      margin-left: -6vh;
+    }
+    .navbar
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+     
+    }
+    .navbar li
+    {
+        list-style: none;
+        text-decoration: none;
+        padding: 0 10px;
+        color:white;
+        font-size: 2.5vw;
+    }
+    .navbar li a{
+        text-decoration: none;
+        transition: 0.2s ease;
+        color: white;
+        font-size: 2vw;
+    }
+  
+#hero
+{
+ background-repeat: no-repeat;
+background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20220522/pngtree-ecommerce-banner-planning-segmentation-selection-image_1375247.jpg);
+height: 20vh;
+object-fit: cover;
+background-size: cover;
+display: flex;
+flex-direction: column;
+ align-items: flex-start;
+justify-content: center;
+}
+
+#feature
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 80px;
+    flex-wrap: wrap;
+    margin: 1%;
+   
+
+}
+#feature .fe-box
+{
+    width: 111px;
+    overflow: hidden;
+    text-align: center;
+    padding: 25px 15px;
+    border: 5px solid black;
+    box-shadow: 0.1px 0.1px 0.1px 0.1px rgba(1, 1, 1, 1.0);
+    
+    margin: 4px 0;
+    transition: 0.3s ;
+}  
+
+
+
+#feature .fe-box:hover
+{
+    box-shadow: 1px 1px 1px 1px rgba(243, 240, 240);
+    transition: 0.3s;
+}
+.fe-box img
+{
+   display: flex;
+   object-fit: cover;
+   width: 10vw;
+   margin-bottom: 5px;
+   overflow: hidden;
+
+}
+
+.fe-box .img2 h6
+{
+    padding: 9px 13px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color:white;
+    
+    background-color:black;
+    font-size: 1.3vw;
+}
+#feature .fe-box h6
+{
+    padding: 9px 13px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color:white;
+    
+    background-color:blueviolet;
+    font-size: 1.3vw;
+    cursor: pointer;
+   
+}
+#feature .fe-box h6:hover
+{
+    background-color: black;
+    color: white;
+    transition: 0.7s ease-in-out;
+    border-radius: 10px;
+}
+.h1
+{
+font-size: 4vw;
+color:blueviolet;
+margin: 1% 5%;
+cursor: pointer;
+}
+
+.contbox
+{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.price
+{
+text-decoration: none;
+color: gray;
+}
+.box 
+{
+height: 30vh;
+width: 35vh;
+background: linear-gradient(gray);
+margin: 6%;
+gap: 2%;
+border:2px solid black;
+border-radius: 3px
+;
+padding: 3% 3%;
+
+
+}
+.box:hover
+{
+border:1px solid blueviolet;
+background:  linear-gradient(to right,rgb(234, 227, 234), rgb(181, 172, 180), rgb(149, 150, 159));
+}
+.contbox img
+{
+height: 28vh;
+ width: 33vh;
+object-fit: cover;
+display: flex;
+cursor: pointer;
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+border-radius: 3px;
+}
+a
+{
+   font-size: 1.5vw;
+    list-style: none;
+    text-decoration: none;
+ }
+.box h2
+{
+    font-size: 2vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+
+
+.viewall
+{
+margin-bottom: auto;
+   border: 0px solid rgb(130, 111, 111);
+   background-color: blueviolet;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 5% 40%;
+   height: 2vh;
+   width: 10dvw;
+   color: rgb(255, 255, 255);
+   font-weight: 900;
+}
+
+button a
+{
+    color: rgb(255, 255, 255);
+font-size: 1.3vw;
+text-decoration: none;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+ 
+.viewall:hover
+{
+   
+   border: 2px solid rgb(6, 0, 0);
+   background-color: rgb(244, 241, 246);
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+#footer
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20vh;
+    background: linear-gradient(to right,violet, rgb(146, 19, 134), rgb(0, 15, 128));
+}
+#footer .links
+{
+    display: flex;
+    align-items: flex-start;
+ flex-direction:column;
+ justify-content: space-between;
+ padding-left: 5%;
+ 
+}
+#footer .links span
+{
+    color: white;
+    font-weight: 900;
+    font-size: 2vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+#footer .links a
+{
+    display:inline-table;
+    align-items: center;
+    font-size: 3vw;
+    list-style: none;
+    text-decoration: none;
+   color: black;
+}
+#footer .contact p
+{
+    display:inline-table;
+    align-items: center;
+    margin-bottom: 20px;
+    list-style: none;
+    line-height: -2%;
+    font-size: 3vw;
+    text-decoration: none;
+   color: black;
+}
+#thankyou
+{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,violet, rgb(146, 19, 134), rgb(0, 15, 128));
+}
+#thankyou h1
+{
+font-size: 3.5vw;
+color:black;
+font-family: cursive;
+}
+
+
+
+
+
+
+
+
+
+
+}
